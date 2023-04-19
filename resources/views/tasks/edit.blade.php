@@ -19,10 +19,10 @@
             </div>
 
             <div class="form-control my-4">
-                <label for="description" class="label">
+                <label for="content" class="label">
                     <span class="label-text">説明:</span>
                 </label>
-                <textarea name="description" class="textarea textarea-bordered w-full">{{ $task->description }}</textarea>
+                <textarea name="content" class="textarea textarea-bordered w-full">{{ $task->content }}</textarea>
             </div>
 
             <div class="form-control my-4">

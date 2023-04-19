@@ -26,7 +26,7 @@
                     <tr>
                         <td><a class="link link-hover text-info" href="{{ route('tasks.show', $task->id) }}">{{ $task->id }}</a></td>
                         <td class="truncate max-w-xs">{{ $task->title }}</td>
-                        <td class="truncate max-w-xs">{{ $task->description }}</td>
+                        <td class="truncate max-w-xs">{{ $task->content }}</td>
                         <td class="truncate max-w-xs">{{ $task->assigned_to }}</td>
                         <td>{{ $task->start_date }}</td>
                         <td>{{ $task->due_date }}</td>

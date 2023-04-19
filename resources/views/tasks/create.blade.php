@@ -16,10 +16,10 @@
             </label>
             <input type="text" name="title" class="input input-bordered w-full" required>
         
-            <label for="description" class="label">
+            <label for="content" class="label">
                 <span class="label-text">詳細<div class="text-red-500 inline-block ml-1">(必須)</div></span>
             </label>
-            <input type="text" name="description" class="input input-bordered w-full" required>
+            <input type="text" name="content" class="input input-bordered w-full" required>
         
             <label for="assigned_to" class="label">
                 <span class="label-text">担当者<div class="text-gray-400 inline-block ml-1">(任意)</div></span>

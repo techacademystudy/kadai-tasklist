@@ -27,7 +27,7 @@
         
             <tr>
                 <th>説明</th>
-                <td class="break-all">{!! nl2br(e($task->description)) !!}</td>
+                <td class="break-all">{!! nl2br(e($task->content)) !!}</td>
             </tr>
         
             <tr>

@@ -54,7 +54,7 @@ class TasksController extends Controller
          // タスクを作成
         $task = new Task;
         $task->title = $request->title;
-        $task->description = $request->description;
+        $task->content = $request->content;
         $task->assigned_to = $request->assigned_to;
         $task->due_date = $request->due_date;
         $task->start_date = $request->start_date;
@@ -115,7 +115,7 @@ class TasksController extends Controller
         $task = Task::findOrFail($id);
         // タスクを更新
         $task->title = $request->title;
-        $task->description = $request->description;
+        $task->content = $request->content;
         $task->assigned_to = $request->assigned_to;
         $task->due_date = $request->due_date;
         $task->start_date = $request->start_date;
