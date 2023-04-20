@@ -54,6 +54,11 @@
                 <th>更新日時</th>
                 <td>{{ $task->updated_at }}</td>
             </tr>
+            
+            <tr>
+                <th>ステータス</th>
+                <td>{{ $task->status }}</td>
+            </tr>
         </tbody>
     </table>
     

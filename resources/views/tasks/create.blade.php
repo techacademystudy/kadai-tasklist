@@ -14,12 +14,12 @@
             <label for="title" class="label">
                 <span class="label-text">タイトル<div class="text-red-500 inline-block ml-1">(必須)</div></span>
             </label>
-            <input type="text" name="title" class="input input-bordered w-full" required>
+            <input type="text" name="title" class="input input-bordered w-full">
         
             <label for="content" class="label">
                 <span class="label-text">詳細<div class="text-red-500 inline-block ml-1">(必須)</div></span>
             </label>
-            <input type="text" name="content" class="input input-bordered w-full" required>
+            <input type="text" name="content" class="input input-bordered w-full">
         
             <label for="assigned_to" class="label">
                 <span class="label-text">担当者<div class="text-gray-400 inline-block ml-1">(任意)</div></span>
@@ -35,6 +35,11 @@
                 <span class="label-text">期限日<div class="text-gray-400 inline-block ml-1">(任意)</div></span>
             </label>
             <input type="date" name="due_date" class="input input-bordered w-full">
+            
+            <label for="title" class="label">
+                <span class="label-text">ステータス<div class="text-red-500 inline-block ml-1">(必須)</div></span>
+            </label>
+            <input type="text" name="status" class="input input-bordered w-full">
         
         </div>
 

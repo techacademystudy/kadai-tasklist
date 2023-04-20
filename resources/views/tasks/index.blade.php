@@ -19,6 +19,7 @@
                         <th>期限日</th>
                         <th>作成日時</th>
                         <th>更新日時</th>
+                        <th>ステータス</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +33,7 @@
                         <td>{{ $task->due_date }}</td>
                         <td>{{ $task->created_at }}</td>
                         <td>{{ $task->updated_at }}</td>
+                        <td>{{ $task->status }}</td>
                     </tr>
                     @endforeach
                 </tbody>
