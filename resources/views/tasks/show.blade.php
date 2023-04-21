@@ -8,36 +8,36 @@
     </div>
     
     <table class="table w-full my-4 table-zebra table-fixed">
-        <thead>
+        <div>
             <tr>
-                <th class="w-40 text-xl break-all">項目</th>
-                <th class="text-xl break-all">詳細</th>
+                <th class="w-40 text-xl whitespace-normal">項目</th>
+                <th class="text-xl whitespace-normal">詳細</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th>id</th>
-                <td class="break-all">{{ $task->id }}</td>
+                <td class="whitespace-normal">{{ $task->id }}</td>
             </tr>
         
             <tr>
                 <th>タイトル</th>
-                <td class="break-all">{{ $task->title }}</td>
+                <td class="whitespace-normal">{{ $task->title }}</td>
             </tr>
         
             <tr>
                 <th>説明</th>
-                <td class="break-all">{!! nl2br(e($task->content)) !!}</td>
+                <td class="whitespace-normal">{!! nl2br(e($task->content)) !!}</td>
             </tr>
         
             <tr>
                 <th>担当者</th>
-                <td class="break-all">{{ $task->assigned_to }}</td>
+                <td class="whitespace-normal">{{ $task->assigned_to }}</td>
             </tr>
         
             <tr>
                 <th>開始日</th>
-                <td class="break-all">{{ $task->start_date }}</td>
+                <td class="whitespace-normal">{{ $task->start_date }}</td>
             </tr>
         
             <tr>
