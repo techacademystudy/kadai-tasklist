@@ -104,9 +104,14 @@ class TasksController extends Controller
      // getでmessages/idにアクセスされた場合の「取得表示処理」
     public function show($id)
     {
+        // ログインしていないユーザーを'/'にリダイレクト
+        if (!Auth::check()) {
+            return redirect('/');
+        }
+    
         // idの値でタスクを検索して取得
         $task = Task::findOrFail($id);
-
+    
         // ログインしているユーザーの情報を取得
         $user = Auth::user();
     
