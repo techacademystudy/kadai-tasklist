@@ -15,4 +15,12 @@ use App\Http\Controllers\TasksController;
 */
 
 Route::get('/', [TasksController::class, 'index']);
+
 Route::resource('tasks', TasksController::class);
+
+require __DIR__.'/auth.php';
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('users', UsersController::class, ['only' => ['index', 'show']]);
+    // Route::resource('microposts', MicropostsController::class, ['only' => ['store', 'destroy']]);
+});
